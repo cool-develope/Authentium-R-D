@@ -6,8 +6,13 @@ This project is a R&amp;D project for POD token
 
 ```bash
 # Deploy
-truffle deploy --network ropsten --reset
+truffle deploy --network development --reset
 
 # Interact
-truffle console --network ropsten --verbose-rpc
+truffle console --network development --verbose-rpc
+```
+
+- Kovan contract address
+```text
+0xdBE998575E41934EF700dE5aa92FEF2Cf5BB695D
 ```

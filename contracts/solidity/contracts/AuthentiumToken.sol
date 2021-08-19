@@ -46,7 +46,7 @@ contract AuthentiumToken is ERC20 {
         int256 price = getThePrice();
 
         require(price > 0, "The price is not negative");
-        uint256 amount = msg.value / (uint(price / 1000));
+        uint256 amount = msg.value / uint(price) * 1000;
 
         _burn(admin, amount);
         poolBalance += msg.value;
