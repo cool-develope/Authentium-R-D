@@ -1,0 +1,19 @@
+{
+  "name": "solidiy",
+  "version": "0.0.1",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.2.1",
+    "@openzeppelin/contracts": "^4.3.0",
+    "@truffle/hdwallet-provider": "^1.0.37"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "author": "rylan",
+  "license": "ISC"
+}
