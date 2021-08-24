@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block sidebar %}
+  <h1 class="display-5">ETH/USD Price {{ether_price|floatformat:"3g"}}$</h1>
+
+	<a type="button" class="btn btn-success" href="{% url 'contracts:transact' %}">Buy Token</a>
+{% endblock %}
+
+{% block content %}
+	<h1 class="display-5">Total Supply {{tot_sup| floatformat:"-3g"}}</h1>
+	{% for account in accounts %}
+		<div class="alert alert-primary" role="alert">
+			<pre>{{account.name|ljust:"15"}} {{account.ethers| floatformat:"3g"| rjust:"10"}} ETH {{account.tokens| floatformat:"g"| rjust:25}} TKN</pre>
+		</div>
+	{% endfor %}
+{% endblock %}
